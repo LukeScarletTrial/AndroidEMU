@@ -1,0 +1,8 @@
+{
+  "name": "Android-Browser-Emulator",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-from-docker:1": {}
+  },
+  "forwardPorts": [6080],
+  "postCreateCommand": "docker run -d -p 6080:6080 --name android-container --device /dev/kvm --privileged budtmo/docker-android-x86-11.0"
+}
